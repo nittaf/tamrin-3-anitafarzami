@@ -1,22 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import  { Component } from 'react'
+ 
+class Textarea extends Component {
+    render() {
+        return (
+          <div>
+             <textarea id="text" name="text" rows="8" cols="30">
+             </textarea>
+          </div>
+        )
+    }
+}
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Textarea style={{borderRadius:6}} maxLen={20}></Textarea>
       </header>
     </div>
   );
